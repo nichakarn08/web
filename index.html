@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หน้าหลัก</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Sarabun:wght@100;200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+<script src='index.js'></script>
+</head>
+
+<body>
+<!---------------แถบเมนู html--------------->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="acti">หน้าหลัก</a>
+  <a href="L_AN.html">การติดตั้งสาย LAN</a>
+  <div class="dropdown">
+    <button class="dropbtn">การ add printer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Samsung M458x</a>
+      <a href="oki.html">OKI C332 PCL6</a>
+      <a href="#">Brother HL-L3230CDN</a>
+    </div>
+  </div> 
+  <a href="#about">การแก้ไขปัญหาคอมพิวเตอร์เบื้องต้น</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="https://www.hatyaicity.go.th/frontpage"  target="_blank" class="w3-hover-opacity">เกี่ยวกับเทศบาลนครหาดใหญ่</a>
+</div>
+  
+<!--   <div style="padding-left:16px">
+    <h2>Responsive Topnav with Dropdown</h2>
+    <p>Resize the browser window to see how it works.</p>
+    <p>Hover over the dropdown button to open the dropdown menu.</p>
+  </div> -->
+  
+<!---------------รูปภาพสไลด์ html--------------->
+<div class="slideshow-container">
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="image/oki1.PNG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="image/photo1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="image/test03.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="image/test01.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="image/test02.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="image/test03.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="image/oki1.PNG" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/photo1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/test03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/test01.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/test02.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="image/test03.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> 
