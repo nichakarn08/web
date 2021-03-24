@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หน้าหลัก</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Sarabun:wght@100;200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' type='text/css' media='screen' href='LAN.css'>
+<script src='LAN.js'></script>
+
+<!--------------- Modal ข้อมูล --------------->
+<style>
+  body {font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    }
+
+  .h2 {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sarabun', sans-serif;; 
+  font-weight: bold;
+  font-size: 25px;
+  }
+  
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal5 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal6 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /*************** Modal Content ***************/
+  .modal1-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  .modal2-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  .modal3-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  .modal4-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  .modal5-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  .modal6-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    line-height: 0.8cm;
+  }
+  
+  /*************** The Close Button ***************/
+  .close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close4 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close5 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close6 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close2:hover,
+  .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close3:hover,
+  .close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close4:hover,
+  .close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close5:hover,
+  .close5:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .close6:hover,
+  .close6:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*************** button 1 ***************/
+  .container1 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+  .container1 img {
+  width: 100%;
+  height: auto;
+  }
+  .container1 .btn1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+  .container1 .btn1:hover {
+  background-color: red;
+  color: white;
+  }
+
+  /*************** button 2 ***************/
+  .container2 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+
+  .container2 img {
+  width: 100%;
+  height: auto;
+  }
+
+  .container2 .btn2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  .container2 .btn2:hover {
+  background-color: red;
+  color: white;
+  }
+
+  /*************** button 3 ***************/
+  .container3 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+
+  .container3 img {
+  width: 100%;
+  height: auto;
+  }
+
+  .container3 .btn3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  .container3 .btn3:hover {
+  background-color: red;
+  color: white;
+  }
+
+  /*************** button 4 ***************/
+  .container4 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+
+  .container4 img {
+  width: 100%;
+  height: auto;
+  }
+
+  .container4 .btn4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  .container4 .btn4:hover {
+  background-color: red;
+  color: white;
+  }
+
+  /*************** button 5 ***************/
+  .container5 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+
+  .container5 img {
+  width: 100%;
+  height: auto;
+  }
+
+  .container5 .btn5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  .container5 .btn5:hover {
+  background-color: red;
+  color: white;
+  }
+
+  /*************** button 6 ***************/
+  .container6 {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  }
+
+  .container6 img {
+  width: 100%;
+  height: auto;
+  }
+
+  .container6 .btn6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  width: 55%;
+  height: 22%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  .container6 .btn6:hover {
+  background-color: red;
+  color: white;
+  }
+
+  </style>
+
+</head>
+
+<body>
+<!--------------- แถบเมนู html --------------->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="LAN.html" class="acti">การติดตั้งสาย LAN</a>
+    <a href="printer.html">การ add printer</a>
+    <a href="#about">การแก้ไขปัญหาคอมพิวเตอร์เบื้องต้น</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="dropdown">
+        <button class="dropbtn">เกี่ยวกับเทศบาลนครหาดใหญ่
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">ประวัติเทศบาลนครหาดใหญ่</a>
+          <a href="#">วิสัยทัศน์/พันธกิจ/เป้าประสงค์</a>
+          <a href="#">สำนัก/กอง</a>
+        </div>
+      </div>
+  </div>
+
+  
+<!--------------- Modal ข้อมูล --------------->
+<h2 class="h2">โปรดเลือกเพื่อศึกษา...</h2>
+
+<!-- Trigger/Open The Modal -->
+
+<!-- First Photo Grid-->
+<div class="w3-row-padding">
+  <div class="container1 w3-third w3-margin-bottom">
+      <img src="image/photo1.jpg" alt="1" style="width:100%" class="w3-hover-opacity">
+      <button id="myBtn1" class="btn1">สายแลน (LAN) คืออะไร</button>
+      <div class="w3-container w3-white">
+      </div>
+  </div>
+
+  <div class="container2 w3-third w3-margin-bottom">
+      <img src="image/photo1.jpg" alt="2" style="width:100%" class="w3-hover-opacity">
+      <button id="myBtn2" class="btn2">รูปแบบการเดินของสายแลน LAN</button>
+      <div class="w3-container w3-white">
+      </div>
+  </div>
+
+  <div class="container3 w3-third">
+      <img src="image/photo1.jpg" alt="3" style="width:100%" class="w3-hover-opacity">
+      <button id="myBtn3" class="btn3">ประเภทของสายแลน LAN</button>
+      <div class="w3-container w3-white">
+      </div>
+  </div>
+</div>
+
+<!-- Second Photo Grid-->
+<div class="w3-row-padding">
+  <div class="container4 w3-third w3-margin-bottom">
+    <img src="image/photo1.jpg" alt="4" style="width:100%" class="w3-hover-opacity">
+    <button id="myBtn4" class="btn4">LAN Cat 6 กับ LAN Cat 5e</button>
+    <div class="w3-container w3-white">
+    </div>
+  </div>
+
+  <div class="container5 w3-third w3-margin-bottom">
+    <img src="image/photo1.jpg" alt="5" style="width:100%" class="w3-hover-opacity">
+    <button id="myBtn5" class="btn5">5</button>
+    <div class="w3-container w3-white">
+    </div>
+  </div>
+
+  <div class="container6 w3-third">
+    <img src="image/photo1.jpg" alt="6" style="width:100%" class="w3-hover-opacity">
+    <button id="myBtn6" class="btn6">6</button>
+    <div class="w3-container w3-white">
+    </div>
+  </div>
+
+</div>
+
+<!--------------- The Modal 1 --------------->
+<div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal1-content">
+    <span class="close1">&times;</span>
+    <h2>สายแลน (Local Area Network)</h2>
+    <p>คือ ระบบเครือข่าย แบบเชื่อมต่อระบบคอมพิวเตอร์เข้าด้วยกันในระยะจำกัด เช่น ในอาคารเดียวกัน หรือในบริเวณเดียวกันที่สามารถลากสายถึงกันได้โดยตรง
+    สายที่ใช้สำหรับการเชื่อมต่อคอมพิวเตอร์กับอุปกรณ์ที่เรียกว่า Switch หรือ HUB (แต่เราก็ยังสามารถเชื่อมต่อระหว่างคอมพิวเตอร์ได้ด้วยเช่นกัน)
+    อัตราความเร็วของสายแลน อยู่ที่ 100 Mbps</p>
+    <img src="image/photo1.jpg" style="width:100%">
+  </div>
+</div>
+
+<!--------------- The Modal 2 --------------->
+<div id="myModal2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal2-content">
+    <span class="close2">&times;</span>
+    <h2>รูปแบบการเดินของสายแลน LAN</h2>
+    <p><li>Bus มีการรับส่งข้อมูลด้วยความเร็ว 10-100 MB/s จะเชื่อมต่อกันบนสายสัญญาณเส้นเดียวกัน โดยจะมีอุปกรณ์ที่เรียกว่า T-Connector เป็นตัวแปลงสัญญาณข้อมูลเพื่อนำเข้าสู่ระบบคอมพิวเตอร์และ Terminator ในการปิดหัวท้ายของสายในระบบเครือข่ายเพื่อดูดซับข้อมูลไม่ให้เกิดการสะท้อนกลับของสัญญาณ</li></p>
+    <p><li>Star เป็นระบบที่มีเป็นการต่อแบบรวมศูนย์ โดยเครื่องคอมพิวเตอร์ทุกเครื่องจะต่อสายเข้าไปที่อุปกรณ์ที่เรียกว่า Hub หรือ Switch โดยอุปกรณ์ที่เรียกว่า Hub หรือ Switch จะทำหน้าที่เปรียบศูนย์กลางที่ทำหน้าที่กระจายข้อมูล โดยข้อดีของการต่อในรูปแบบนี้ คือ หากสายสัญญาณเกิดขาดในคอมพิวเตอร์เครื่องใดเครื่องหนึ่ง เครื่องคอมพิวเตอร์อื่นๆ จะสามารถใช้งานได้ปกติ แต่หากศูนย์กลางคือ Hub หรือ Switch เกิดเสียจะทำให้ระบบทั้งระบบไม่สามารถทำงานได้ทั้งระบบ</li></p>
+    <p><li>Ring เป็นระบบที่มีการส่งข้อมูลไปในทิศทางเดียวกัน โดยจะมีเครื่อง Server หรือ Switch ในการปล่อย Token เพื่อตรวจสอบว่ามีเครื่องคอมพิวเตอร์ใดต้องการส่งข้อมูลหรือไม่และระหว่างการส่งข้อมูลเครื่องคอมพิวเตอร์อื่นๆ ที่ต้องการส่งข้อมูลจะต้องทำการรอให้ข้อมูลก่อนหน้านั้นถูกส่งให้สำเร็จเสียก่อน</li></p>
+  </div>
+</div>
+
+<!--------------- The Modal 3 --------------->
+<div id="myModal3" class="modal3">
+
+  <!-- Modal content -->
+  <div class="modal3-content">
+    <span class="close3">&times;</span>
+    <h2>ประเภทของสายแลน LAN</h2>
+    <p><li>การเดินสายแลนจะมีสายแลน LAN ให้เลือกหลายขนาดเช่น Cat 5e, Cat 6</li></p>
+    <p><li>ประเภทที่หนึ่ง สายแลน LAN UTP UTP CAT 5 คือ สายแลน ที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 100 Mbps สายชนิดนี้ไม่เป็นที่นิยมใช้งานกันเท่าไรเนื่องด้วยมีความเร็วในการถ่ายโอนข้อมูลที่ต่ำ</li></p>
+    <p><li>ประเภทที่สอง สายแลน LAN UTP CAT 5e คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 1 Gpbs</li></p>
+    <p><li>ประเภทที่สาม สายแลน LAN UTP CAT 6 คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 10 Gpbs BANWIDTH อยู่ที่ 250 MHz</li></p>
+    <p><li>ประเภทที่สี่ สายแลน LAN UTP CAT 7 คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 10 Gpbs BANWIDTH อยู่ที่ 600 MHz</li></p>
+  </div>
+</div>
+
+<!--------------- The Modal 4 --------------->
+<div id="myModal4" class="modal4">
+
+  <!-- Modal content -->
+  <div class="modal4-content">
+    <span class="close4">&times;</span>
+    <h2>เดินสายแลน LAN Cat 6 และ เดินสายแลน LAN Cat 5e ต่างกันอย่างไร</h2>
+    <p><li>เดินสายแลน LAN Cat 6 Cat 5e ต่างกันในด้านของความเร็ว และระยะสาย และราคาสายแลนก็ต่างกันมาก ซึ่งสายแลน LAN Cat 6 ได้เปรียบตรงที่ทองแดงมีขนาดใหญ่กว่า ทำให้เดินสายได้ในระยะไกล และรองรับความเร็วในระดับ 1Gbps ได้ดีกว่าสายแลน LAN Cat5e</li></p>
+    <p><li>เดินสายแลน LAN Cat 5e เหมาะสำหรับใช้งานทั่วไป ตามบ้านที่ใช้ความเร็วไม่เกิน 100 Mbps ส่วนสายแลน LAN Cat 6 นั้น เหมาะที่จะใช้งานกับองค์กรหรือระบบเครือข่ายที่ใช้ความเร็วในระดับ 1Gbps</li></p>
+  </div>
+</div>
+
+<!--------------- The Modal 5 --------------->
+<div id="myModal5" class="modal5">
+
+  <!-- Modal content -->
+  <div class="modal5-content">
+    <span class="close5">&times;</span>
+    <h2>5</h2>
+    <p><li>5</li></p>
+    <p><li>5</li></p>
+  </div>
+</div>
+
+<!--------------- The Modal 6 --------------->
+<div id="myModal6" class="modal6">
+
+  <!-- Modal content -->
+  <div class="modal6-content">
+    <span class="close6">&times;</span>
+    <h2>6</h2>
+    <p><li>6</li></p>
+    <p><li>6</li></p>
+  </div>
+</div>
+
+<div class="w3-black w3-center w3-padding-24">ข้อมูลอ้างอิงจาก <a href="https://www.fiberthai.com/%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%A5%E0%B8%99/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Fiber Thai</a></div>
+
+<!---------------Modal ข้อมูล 1--------------->
+<script>
+  // Get the modal
+  var modal1 = document.getElementById("myModal1");
+  
+  // Get the button that opens the modal
+  var btn1 = document.getElementById("myBtn1");
+  
+  // Get the <span> element that closes the modal
+  var span1 = document.getElementsByClassName("close1")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn1.onclick = function() {
+    modal1.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+  }
+  </script>
+
+  <!---------------Modal ข้อมูล 2--------------->
+<script>
+  // Get the modal
+  var modal2 = document.getElementById("myModal2");
+  
+  // Get the button that opens the modal
+  var btn2 = document.getElementById("myBtn2");
+  
+  // Get the <span> element that closes the modal
+  var span2 = document.getElementsByClassName("close2")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn2.onclick = function() {
+    modal2.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span2.onclick = function() {
+    modal2.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+  </script>
+
+<!---------------Modal ข้อมูล 3 ---------------->
+<script>
+  // Get the modal
+  var modal3 = document.getElementById("myModal3");
+  
+  // Get the button that opens the modal
+  var btn3 = document.getElementById("myBtn3");
+  
+  // Get the <span> element that closes the modal
+  var span3 = document.getElementsByClassName("close3")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn3.onclick = function() {
+    modal3.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span3.onclick = function() {
+    modal3.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal3) {
+      modal3.style.display = "none";
+    }
+  }
+  </script>
+
+<!---------------Modal ข้อมูล 4 ---------------->
+<script>
+  // Get the modal
+  var modal4 = document.getElementById("myModal4");
+  
+  // Get the button that opens the modal
+  var btn4 = document.getElementById("myBtn4");
+  
+  // Get the <span> element that closes the modal
+  var span4 = document.getElementsByClassName("close4")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn4.onclick = function() {
+    modal4.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span4.onclick = function() {
+    modal4.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal4) {
+      modal4.style.display = "none";
+    }
+  }
+  </script>
+
+<!---------------Modal ข้อมูล 5 ---------------->
+<script>
+  // Get the modal
+  var modal5 = document.getElementById("myModal5");
+  
+  // Get the button that opens the modal
+  var btn5 = document.getElementById("myBtn5");
+  
+  // Get the <span> element that closes the modal
+  var span5 = document.getElementsByClassName("close5")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn5.onclick = function() {
+    modal5.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span5.onclick = function() {
+    modal5.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal5) {
+      modal5.style.display = "none";
+    }
+  }
+  </script>
+
+  <!---------------Modal ข้อมูล 6 ---------------->
+<script>
+  // Get the modal
+  var modal6 = document.getElementById("myModal6");
+  
+  // Get the button that opens the modal
+  var btn6 = document.getElementById("myBtn6");
+  
+  // Get the <span> element that closes the modal
+  var span6 = document.getElementsByClassName("close6")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn6.onclick = function() {
+    modal6.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span6.onclick = function() {
+    modal6.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal6) {
+      modal6.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html> 

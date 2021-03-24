@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หน้าหลัก</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Sarabun:wght@100;200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' type='text/css' media='screen' href='L_AN.css'>
+<script src='L_AN.js'></script>
+</head>
+
+<style>
+/* แถบหัวข้อเนื้อหา */
+    body {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #fff;
+    }
+
+    .h2 {
+    text-align: center;
+    font-size: 25px;
+    }
+
+/*************** แถบหัวข้อเนื้อหา อุปกรณ์ ***************/
+.accordion0 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #fbc702;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active0, .accordion0:hover {
+    background-color: #e16e79; 
+    color: #000; 
+    }
+    
+    .panel0 {
+    padding: 0 18px;
+    display: none;
+    background-color: #e16e79;
+    overflow: hidden;
+    }
+
+/*************** แถบหัวข้อเนื้อหา 1 ***************/
+    .accordion1 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #015c92;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active1, .accordion1:hover {
+    background-color: #fbeee6; 
+    color: #000; 
+    }
+    
+    .panel1 {
+    padding: 0 18px;
+    display: none;
+    background-color: #fbeee6;
+    overflow: hidden;
+    }
+
+/*************** แถบหัวข้อเนื้อหา 2 ***************/
+.accordion2 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #2d82b5;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active2, .accordion2:hover {
+    background-color: #ffe5d8;
+    color: #000;  
+    }
+    
+    .panel2 {
+    padding: 0 18px;
+    display: none;
+    background-color: #ffe5d8;
+    overflow: hidden;
+    }
+
+/*************** แถบหัวข้อเนื้อหา 3 ***************/
+.accordion3 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #53a7d8;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active3, .accordion3:hover {
+    background-color: #ffcad4;
+    color: #000; 
+    }
+    
+    .panel3 {
+    padding: 0 18px;
+    display: none;
+    background-color: #ffcad4;
+    overflow: hidden;
+    }
+
+/*************** แถบหัวข้อเนื้อหา 4 ***************/
+.accordion4 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #88cdf6;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active4, .accordion4:hover {
+    background-color: #f3abb6; 
+    color: #000; 
+    }
+    
+    .panel4 {
+    padding: 0 18px;
+    display: none;
+    background-color: #f3abb6;
+    overflow: hidden;
+    }
+
+/*************** แถบหัวข้อเนื้อหา 5 ***************/
+.accordion5 {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sarabun', sans-serif;; margin:0;
+    font-weight: bold;
+    background-color: #bce6ff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    }
+    
+    .active5, .accordion5:hover {
+    background-color: #9f8189; 
+    color: #000; 
+    }
+    
+    .panel5 {
+    padding: 0 18px;
+    display: none;
+    background-color: #9f8189;
+    overflow: hidden;
+    }
+
+    </style>
+
+<body>
+<!---------------แถบเมนู html--------------->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="L_AN.html" class="acti">การติดตั้งสาย LAN</a>
+    <div class="dropdown">
+      <button class="dropbtn">การ add printer
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Samsung M458x</a>
+        <a href="oki.html">OKI C332 PCL6</a>
+        <a href="#">Brother HL-L3230CDN</a>
+      </div>
+    </div> 
+    <a href="com.html">การแก้ไขปัญหาคอมพิวเตอร์เบื้องต้น</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="https://www.hatyaicity.go.th/frontpage"  target="_blank" class="w3-hover-opacity">เกี่ยวกับเทศบาลนครหาดใหญ่</a>
+  </div>
+  
+<!--   <div style="padding-left:16px">
+    <h2>Responsive Topnav with Dropdown</h2>
+    <p>Resize the browser window to see how it works.</p>
+    <p>Hover over the dropdown button to open the dropdown menu.</p>
+  </div> -->
+
+  
+<h2 class="h2">วิธีเข้าหัวสายแลนโดยต่อสายแบบตรง ...</h2>
+
+<!---------------แถบเนื้อหา อุปกรณ์--------------->
+<button class="accordion0">--> อุปกรณ์</button>
+<div class="panel0">
+  <p>สายแลน (ความยาวตามต้องการ), หัวเเลน (RJ45) 2 หัว, คีมเข้าหัวแลน</p>
+</div>
+
+<h2 class="h2">ขั้นตอนต่าง ๆ ดังนี้ ...</h2>
+
+<!---------------แถบเนื้อหา 1--------------->
+  <button class="accordion1">--> ขั้นตอนที่ 1</button>
+  <div class="panel1">
+    <p>ใช้คัตเตอร์หรือคีมเข้าหัวแลนปอกสายหุ้มสีขาวออก ให้มีความยาวประมาณ 3 เซนติเมตร (ระวังอย่าให้มีดโดนสายด้านใน)</p>
+  </div>
+  
+<!---------------แถบเนื้อหา 2--------------->
+<button class="accordion2">--> ขั้นตอนที่ 2</button>
+  <div class="panel2">
+    <p>เรียงสายตามลำดับสี ดังนี้ ขาวส้ม, ส้ม, ขาวเขียว, น้ำเงิน, ขาวน้ำเงิน, เขียว, ขาวน้ำตาล, น้ำตาล รวบสายติดกันแล้วใช้กรรไกรตัดให้มีขนาดเท่ากัน</p>
+  </div>
+  
+<!---------------แถบเนื้อหา 3--------------->
+  <button class="accordion3">--> ขั้นตอนที่ 3</button>
+  <div class="panel3">
+    <p>นำสายสอดเข้าไปในหัวแลนตามช่องเล็ก ๆ และให้ปลายสายแลนเข้าไปจนสุด (ระวังสายงอด้วย)</p>
+  </div>
+
+<!---------------แถบเนื้อหา 4--------------->
+<button class="accordion4">--> ขั้นตอนที่ 4</button>
+<div class="panel4">
+  <p>นำสายกับหัวสอดเข้าไปในคีมเข้าหัวแลน โดยให้สายสีขาวเข้าไปในหัวแลนด้วยประมาณ 1.5 เซนติเมตร แล้วบีบแรง ๆ ให้มีเสียงดัง "กรึ๊บ" ห้ามบีบย้ำซ้ำเป็นอันขาด</p>
+</div>
+
+<!---------------แถบเนื้อหา 5--------------->
+<button class="accordion5">--> ขั้นตอนที่ 5</button>
+<div class="panel5">
+  <p>ทำอีกข้างเหมือนขั้นตอนที่ 1-4 ก่อนนำไปใช้ต้องเทสสาย (การเทสต้องนำหัวสายแลนที่เข้าไว้เสียบเข้าเครื่องเทสเส้นละฝั่ง ถ้าไฟขึ้นเป็นสีเหลืองทุกจุดเป็นการเทสผ่าน แต่ถ้าหากไฟจุดใดเป็นสีแดงแสดงว่าเทสไม่ผ่าน ต้องตัดหัวข้างนั้นออกแล้วเข้าใหม่)</p>
+</div>
+  
+  <script>
+
+// แถบหัวข้อเนื้อหา อุปกรณ์
+var acc = document.getElementsByClassName("accordion0");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active0");
+      var panel0 = this.nextElementSibling;
+      if (panel0.style.display === "block") {
+        panel0.style.display = "none";
+      } else {
+        panel0.style.display = "block";
+      }
+    });
+  }
+
+// แถบหัวข้อเนื้อหา 1
+  var acc = document.getElementsByClassName("accordion1");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active1");
+      var panel1 = this.nextElementSibling;
+      if (panel1.style.display === "block") {
+        panel1.style.display = "none";
+      } else {
+        panel1.style.display = "block";
+      }
+    });
+  }
+
+// แถบหัวข้อเนื้อหา 2
+var acc = document.getElementsByClassName("accordion2");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active2");
+      var panel2 = this.nextElementSibling;
+      if (panel2.style.display === "block") {
+        panel2.style.display = "none";
+      } else {
+        panel2.style.display = "block";
+      }
+    });
+  }
+
+// แถบหัวข้อเนื้อหา 3
+var acc = document.getElementsByClassName("accordion3");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active3");
+      var panel3 = this.nextElementSibling;
+      if (panel3.style.display === "block") {
+        panel3.style.display = "none";
+      } else {
+        panel3.style.display = "block";
+      }
+    });
+  }
+
+// แถบหัวข้อเนื้อหา 4
+var acc = document.getElementsByClassName("accordion4");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active4");
+      var panel4 = this.nextElementSibling;
+      if (panel4.style.display === "block") {
+        panel4.style.display = "none";
+      } else {
+        panel4.style.display = "block";
+      }
+    });
+  }
+
+// แถบหัวข้อเนื้อหา 5
+var acc = document.getElementsByClassName("accordion5");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active5");
+      var panel5 = this.nextElementSibling;
+      if (panel5.style.display === "block") {
+        panel5.style.display = "none";
+      } else {
+        panel5.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+</body>
+</html> 
